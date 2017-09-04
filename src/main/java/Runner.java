@@ -7,6 +7,10 @@ import java.util.Date;
 
 public class Runner {
 
+    static {
+        System.setProperty("PORT", "8080");
+    }
+
     public static void main(String[] args) {
         Vertx vertx = Vertx.factory.vertx();
 
@@ -26,7 +30,7 @@ public class Runner {
                     .end("ahihi");
         });
 
-        httpServer.requestHandler(router::accept).listen(1920);
-        System.out.println("Listen on port 1920");
+        httpServer.requestHandler(router::accept).listen(8080);
+        System.out.println("Listen on port: 8080" );
     }
 }
