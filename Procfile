@@ -1,0 +1,1 @@
+web: java -jar target/vertx-heroku-1.0-SNAPSHOT-fat.jar
