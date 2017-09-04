@@ -64,7 +64,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Main-Class>io.vertx.core.Launcher</Main-Class>
+                                        <Main-Class>Runner</Main-Class>
                                         <Main-Verticle>${main.Runner}</Main-Verticle>
                                     </manifestEntries>
                                 </transformer>
