@@ -68,9 +68,6 @@
                                         <Main-Verticle>${main.Runner}</Main-Verticle>
                                     </manifestEntries>
                                 </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/services/io.vertx.core.spi.VerticleFactory</resource>
-                                </transformer>
                             </transformers>
                             <artifactSet>
                             </artifactSet>

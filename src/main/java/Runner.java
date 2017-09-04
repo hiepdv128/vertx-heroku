@@ -27,6 +27,6 @@ public class Runner {
         });
 
         httpServer.requestHandler(router::accept).listen(1920);
-        System.out.println("Listen on port");
+        System.out.println("Listen on port 1920");
     }
 }
