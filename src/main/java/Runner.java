@@ -30,7 +30,7 @@ public class Runner {
                     .end("ahihi");
         });
 
-        httpServer.requestHandler(router::accept).listen(8080);
-        System.out.println("Listen on port: 8080" );
+        httpServer.requestHandler(router::accept).listen(Integer.parseInt(System.getenv("PORT")), "0.0.0.0");
+        System.out.println("Listen on port: " + System.getenv("PORT"));
     }
 }
